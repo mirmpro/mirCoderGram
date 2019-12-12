@@ -5,20 +5,15 @@
     <div class="row">
         <div class="col-3 p-5"><img src="/img/29089157_178243439464821_3131302643666780160_n.jpg" class="rounded-circle" alt=""></div>
         <div class="col-9 p-5">
-            <div><h1>anik_coder</h1></div>
+            <div><h1>{{ $user->username }}</h1></div>
             <div class="d-flex">
                 <div class="pr-4"><strong>148</strong> posts</div>
                 <div class="pr-4"><strong>122</strong> followers</div>
                 <div class="pr-4"><strong>148</strong> following</div>
             </div>
-            <div class="pt-4 font-weight-bold">A N i K</div>
-            <div>Name : Mr.Anik
-                 Hobby : Programing and Designing.
-                 Job Description : Freelance Design and Developer.
-                 Studying : Computer Engineering.
-                 Need More ?????
-            </div>
-            <div class="font-weight-bold"><a href="mirm.pro">MirM</a></div>
+            <div class="pt-4 font-weight-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->description }}</div>
+            <div class="font-weight-bold"><a href="mirm.pro">{{$user->profile->url}}</a></div>
         </div>
         </div>
     <div class="row pt-4">
